@@ -28,7 +28,7 @@ export function SpotlightEffect() {
   return (
     <div
       id="spotlight"
-      className="pointer-events-none absolute inset-0 z-30 transition-all duration-300"
+      className="pointer-events-none absolute top-0 inset-0 z-30 transition-all duration-300"
       style={{
         background: `
           radial-gradient(
