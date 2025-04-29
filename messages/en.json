@@ -6,8 +6,8 @@
     "about": "ABOUT",
     "experience": "EXPERIENCE",
     "projects": "PROJECTS",
-    "placeholder1": "This is placeholder text for the right column. You can update this section with your own bio, experience, or any other content you'd like to showcase.",
-    "placeholder2": "Feel free to customize the layout, colors, and typography to match your personal style!"
+    "aboutMe1": "I work as a product engineer at Gazai. I build web applications through quick iterations.",
+    "aboutMe2": "Previously, I worked with companies in the fintech, adtech, and iot sectors."
   },
   "Metadata": {
     "title": "Jack Tsai - Product Engineer"
