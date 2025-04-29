@@ -1,0 +1,15 @@
+{
+  "Home": {
+    "name": "Jack Tsai",
+    "role": "Product Engineer",
+    "tagline": "I build digital experiences for the web.",
+    "about": "ABOUT",
+    "experience": "EXPERIENCE",
+    "projects": "PROJECTS",
+    "placeholder1": "This is placeholder text for the right column. You can update this section with your own bio, experience, or any other content you'd like to showcase.",
+    "placeholder2": "Feel free to customize the layout, colors, and typography to match your personal style!"
+  },
+  "Metadata": {
+    "title": "Jack Tsai - Product Engineer"
+  }
+}
