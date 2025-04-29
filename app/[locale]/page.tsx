@@ -20,7 +20,7 @@ export default async function Home(props: {
       <SpotlightEffect />
       <div className="relative max-w-screen-xl mx-auto flex flex-col md:flex-row animate__animated animate__fadeIn">
         {/* Left Side */}
-        <div className="md:sticky md:top-24 md:w-1/3 h-fit flex flex-col items-start px-8 min-h-[400px]">
+        <div className="pt-20 md:pt-0 md:sticky md:top-24 md:w-1/3 h-fit flex flex-col items-start px-8 min-h-[400px]">
           <h1 className="text-4xl md:text-5xl font-bold mb-2 tracking-tight animate__animated animate__tada animate__delay-2s">
             {t("name")}
           </h1>

@@ -126,24 +126,29 @@ export const ExperienceSection = () => {
   return (
     <div className="relative">
       {/* Timeline line */}
-      <div className="absolute left-40 top-8 bottom-8 w-px bg-neutral-200 dark:bg-neutral-800" />
+      <div className="hidden md:block left-40 absolute top-8 bottom-8 w-px bg-neutral-200 dark:bg-neutral-800" />
 
       {/* Experience entries */}
       <div className="space-y-16">
         {experiences.map((experience) => (
           <div key={experience.title} className="relative flex gap-12">
             {/* Title with dot */}
-            <div className="w-48 flex-shrink-0 pt-2">
+            <div className="hidden md:block w-48 flex-shrink-0 pt-2">
               <div className="flex items-center">
                 <span className="text-2xl font-bold">{experience.title}</span>
-                <div className="absolute left-40 -translate-x-1/2">
+                <div className="hidden md:block absolute left-40 -translate-x-1/2">
                   <div className="w-4 h-4 rounded-full border-2 border-neutral-300 dark:border-neutral-700 bg-white dark:bg-black" />
                 </div>
               </div>
             </div>
 
             {/* Content */}
-            <div className="pt-2 flex-grow">{experience.content}</div>
+            <div className="pt-2 flex-grow">
+              <span className="inline-block mb-4 text-2xl md:hidden font-bold">
+                {experience.title}
+              </span>
+              {experience.content}
+            </div>
           </div>
         ))}
       </div>
