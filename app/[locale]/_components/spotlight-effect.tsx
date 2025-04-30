@@ -6,15 +6,15 @@ import React, { useEffect } from "react";
 export function SpotlightEffect() {
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
-      const x = e.clientX;
-      const y = e.clientY;
+      const x = e.clientX + window.scrollX;
+      const y = e.clientY + window.scrollY;
 
       const spotlight = document.getElementById("spotlight");
       if (spotlight) {
         spotlight.style.background = `
           radial-gradient(
             800px circle at ${x}px ${y}px,
-            rgba(255, 20, 147, 0.1),
+            rgba(255, 20, 147, 0.12),
             transparent 80%
           )
         `;
@@ -33,7 +33,7 @@ export function SpotlightEffect() {
         background: `
           radial-gradient(
             800px circle at 50% 50%,
-            rgba(255, 20, 147, 0.1),
+            rgba(255, 20, 147, 0.12),
             transparent 80%
           )
         `,
