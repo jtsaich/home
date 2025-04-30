@@ -3,6 +3,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import "animate.css";
 import { SpotlightEffect } from "./_components/spotlight-effect";
 import { ExperienceSection } from "./_components/experience-section";
+import { NavButtons } from "./_components/nav-buttons";
 
 export default async function Home(props: {
   params: Promise<{ locale: string }>;
@@ -27,33 +28,27 @@ export default async function Home(props: {
           <h2 className="text-xl md:text-2xl font-medium mb-4">{t("role")}</h2>
           <p className="text-base md:text-lg mb-12 max-w-xs">{t("tagline")}</p>
           <nav className="w-full mt-8">
-            <ul className="flex flex-col gap-2 text-sm font-semibold tracking-widest">
-              <li>
-                <span className="inline-block border-b-2 pb-1 cursor-pointer">
-                  {t("about")}
-                </span>
-              </li>
-              <li>
-                <span className="inline-block border-b pb-1 cursor-pointer">
-                  {t("experience")}
-                </span>
-              </li>
-              <li>
-                <span className="inline-block border-b pb-1 cursor-pointer">
-                  {t("projects")}
-                </span>
-              </li>
-            </ul>
+            <NavButtons
+              labels={{
+                about: t("about"),
+                experience: t("experience"),
+                projects: t("projects"),
+              }}
+            />
           </nav>
         </div>
         {/* Right Side */}
         <div className="md:w-2/3 flex flex-col justify-center px-8 py-24 min-h-[400px]">
           {/* About section */}
-          <div className="max-w-2xl text-base md:text-lg leading-relaxed">
+          <div
+            id="about"
+            className="max-w-2xl text-base md:text-lg leading-relaxed scroll-mt-24"
+          >
             <p className="mb-4">{t("aboutMe1")}</p>
             <p className="mb-4">{t("aboutMe2")}</p>
           </div>
-          <div className="mt-16">
+          {/* Experience section */}
+          <div id="experience" className="mt-16 scroll-mt-24">
             <ExperienceSection />
           </div>
         </div>
