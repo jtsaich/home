@@ -16,7 +16,7 @@ export default async function Home(props: {
   const t = await getTranslations("Home");
 
   return (
-    <main className="min-h-screen relative">
+    <main className="min-h-screen relative bg-gradient-to-br from-rose-50/50 via-white to-purple-50/50 dark:from-rose-950/5 dark:via-neutral-950 dark:to-purple-950/5">
       <SpotlightEffect />
       <div className="relative max-w-screen-xl mx-auto flex flex-col md:flex-row animate__animated animate__fadeIn">
         {/* Left Side */}

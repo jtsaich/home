@@ -14,7 +14,7 @@ export function SpotlightEffect() {
         spotlight.style.background = `
           radial-gradient(
             800px circle at ${x}px ${y}px,
-            rgba(255, 20, 147, 0.15),
+            rgba(255, 20, 147, 0.1),
             transparent 80%
           )
         `;
@@ -33,7 +33,7 @@ export function SpotlightEffect() {
         background: `
           radial-gradient(
             800px circle at 50% 50%,
-            rgba(255, 20, 147, 0.15),
+            rgba(255, 20, 147, 0.1),
             transparent 80%
           )
         `,
